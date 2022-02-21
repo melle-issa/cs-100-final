@@ -16,6 +16,13 @@ class View {
          *   user
          */
         virtual void refresh() = 0;
+        
+        /* Get how big this view should be
+         *
+         * Used to figure out how to lay out the screen
+         */
+        virtual int getWidth() = 0;
+        virtual int getHeight() = 0;
 }
 
 #endif // VIEW_H
