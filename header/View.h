@@ -1,6 +1,11 @@
 #ifndef VIEW_H
 #define VIEW_H
 
+/* A generic interface that defines graphical elements
+ * 
+ * - getWidth and getHeight do not have definite values, so implementations of
+ *   View are free to define their own size
+ */
 class View {
     public:
         /* Updates the display buffer with the most recent data from this view

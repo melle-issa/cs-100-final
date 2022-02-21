@@ -3,6 +3,10 @@
 #ifndef TEXT_VIEW_H
 #define TEXT_VIEW_H
 
+/* Displays a string on the screen
+ * 
+ * Used to facilitate alignment and arrangement of text within other views
+ */
 class TextView : public View {
     private:
         /* The text for the view to display
