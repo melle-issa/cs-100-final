@@ -3,9 +3,11 @@
 #ifndef TEXT_VIEW_H
 #define TEXT_VIEW_H
 
+#include "View.h"
+
 /* Displays a string on the screen
  * 
- * Used to facilitate alignment and arrangement of text within other views
+ * Used to facilitate alignment and arrangement of text within other viewspain
  */
 class TextView : public View {
     private:
@@ -30,7 +32,6 @@ class TextView : public View {
          *   alignment
          */
         int width;
-    
     
     public:
         virtual void draw();
