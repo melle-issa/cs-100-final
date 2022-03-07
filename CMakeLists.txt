@@ -5,16 +5,22 @@ SET(CMAKE_CXX_STANDARD 11)
 # Main productoin executable
 ADD_EXECUTABLE(task-scheduler
     src/main.cpp 
+    src/Menu.cpp
     src/Task.cpp
     src/TaskList.cpp
+    src/Filter.cpp
+    src/InputHelper.cpp
 )
 
 # GTest testing executable
 ADD_SUBDIRECTORY(googletest)
 ADD_EXECUTABLE(test
     src/test.cpp
+    src/Menu.cpp
     src/Task.cpp
     src/TaskList.cpp
+    src/Filter.cpp
+    src/InputHelper.cpp
 )
 TARGET_LINK_LIBRARIES(test gtest)
 TARGET_COMPILE_DEFINITIONS(test PRIVATE gtest_disable_pthreads=ON)
